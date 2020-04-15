@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {v4 as uuid} from 'uuid';
 import {
     Button,
     Modal,
@@ -32,7 +31,6 @@ class ItemModal extends Component {
     onSubmit = e => {
         e.preventDefault();
         const newItem = {
-            id: uuid(),
             name: this.state.name
         }
         this.props.addItem(newItem);
